@@ -1,0 +1,131 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+.html{
+    color: hsl(0, 0%, 30%);
+    letter-spacing: 5px;
+    cursor: pointer;
+
+}
+
+.html:hover span:nth-child(1){
+    margin-right: 10px;
+}
+
+h1:hover span:nth-child(1):after{
+    content: "yper";
+    
+}
+
+.html:hover span:nth-child(2):after{
+    content: "ext";
+    margin-right: 10px;
+}
+
+.html:hover span:nth-child(3):after{
+    content: "arkup";
+    margin-right: 10px;
+}
+
+.html:hover span:nth-child(4):after{
+    content: "anguage";
+    margin-right: 10px;
+}
+
+.html:hover span {
+    color: hsl(0, 0%, 100%);
+    text-shadow: 0 0 10px hsl(0, 0%, 100%),
+   
+
+
+}
+
+.html  span {
+    transition: 0.5s ease-out;
+}
+
+
+h2 {
+    color: hsl(0, 0%, 30%);
+}
+
+
+.css {
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px hsl(0, 0%, 70%);
+    }
+
+    to {
+        text-shadow: 0 0 12px hsl(0, 0%, 100%),
+                     1px 0 12px hsl(0, 0%, 100%),
+                     0 1px 12px hsl(0, 0%, 100%),
+                     1px 1px 12px hsl(0, 0%, 100%);
+       }
+}
+
+
+
+.flip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    width: 350px;
+    height: 500px;
+
+}
+
+.container:hover > .card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+
+.card {
+    color: hsl(0, 0%, 30%);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition-duration: 1500ms;
+
+     
+
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+
+.front,
+.back {
+    
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+}
+
+
+.front {
+    background-image: url(GT7.jpeg);
+}

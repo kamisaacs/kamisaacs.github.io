@@ -1,0 +1,210 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+.topHalf {
+    height: 50vh;
+    background: linear-gradient(45deg, darkblue,  white);
+    /* flex-wrap: wrap; */
+}
+
+
+
+
+
+.topClass {
+    display: block;
+    padding-top: 100px;
+    color: #051c18a3;
+    text-align: center;
+    font-size: x-large;
+    
+    
+
+}
+
+header {
+    height: 100px;
+    background: linear-gradient(45deg, darkblue,  white);
+    margin-top: 50px;
+    font-size: 15px;
+   
+}
+
+header nav *{
+    display: flex;   
+    justify-content: space-evenly;
+    color: #051c18a3;
+    margin-top: 16px;
+    flex-wrap: wrap;
+    
+
+}
+
+
+.subText{
+    text-align: center;
+    margin-top: 150px;
+}
+
+
+ section div  {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    
+} 
+
+.sites {
+    margin-top: 200px;
+    margin-bottom: 500px;
+    display: flex;
+    justify-content: space-around; 
+    height: 500px; 
+    width:  1000;
+    resize: none;
+    
+}
+
+.flipCard, .hoverCard, .siteThree {
+    flex:  33.33%;
+    padding: 5px;
+}
+
+@media screen and (max-width: 500px) {
+    .flipCard, .hoverCard, .siteThree {
+      width: 100%;
+    }
+  }
+
+.sites > p {
+    text-align: left;
+}
+
+
+.flipCard{
+    background-image: url(GT7.jpeg);
+    background-size: cover;
+    text-align: center;
+    margin-right: 20px;
+    border-radius: 1rem;
+    resize: none;
+}
+
+.hoverCard{
+    background-image: url(Quote.jpeg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    text-align: justify;
+    text-justify: inter-word;
+    color: yellow;
+    margin-right: 20px;
+    
+    
+
+}
+
+.hoverCard :hover {
+    cursor: pointer;
+}
+
+
+.siteThree{
+    background-image: url(SF3.png);
+    background-size: cover;
+    text-align: justify;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    border-top:  3px solid black;
+    border-bottom: 3px solid black;
+    margin-top: 250px;
+    color: hsl(0, 0%, 30%);
+    
+}
+
+.textLeft{
+    
+    text-align: center;
+}
+
+.skills{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh;
+
+}
+.skills{
+    color: hsl(0, 0%, 30%);
+    letter-spacing: 5px;
+    cursor: pointer;
+
+}
+
+.html:hover span:nth-child(1){
+    margin-right: 10px;
+}
+
+h1:hover span:nth-child(1):after{
+    content: "yper";
+    
+}
+
+.html:hover span:nth-child(2):after{
+    content: "ext";
+    margin-right: 10px;
+}
+
+.html:hover span:nth-child(3):after{
+    content: "arkup";
+    margin-right: 10px;
+}
+
+.html:hover span:nth-child(4):after{
+    content: "anguage";
+    margin-right: 10px;
+}
+
+.html:hover span {
+    color: hsl(0, 0%, 100%);
+    text-shadow: 0 0 10px hsl(0, 0%, 100%),
+   
+
+
+}
+
+.html  span {
+    transition: 0.5s ease-out;
+}
+
+.css {
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px hsl(0, 0%, 70%);
+    }
+
+    to {
+        text-shadow: 0 0 12px hsl(0, 0%, 100%),
+                     1px 0 12px hsl(0, 0%, 100%),
+                     0 1px 12px hsl(0, 0%, 100%),
+                     1px 1px 12px hsl(0, 0%, 100%);
+       }
+}
